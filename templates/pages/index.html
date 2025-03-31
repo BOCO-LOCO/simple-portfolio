@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block body %}
+ <!-- Move to up button -->
+ <div class="scroll-button">
+    <a href="#"><i class="fas fa-arrow-up"></i></a>
+  </div>
+ 
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <img src="{{ url_for('static', filename='img/avatar.svg')}}" class="pic" 
+             alt="Profile avatar" 
+             loading="lazy">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm "The Name"</div>
+        <div class="text-three">Back-end developer</div>
+        <div class="button">
+          
+          <button>Hire Me</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- My Skill Section Start -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="skills-details">
+        <div class="text">
+            <h1>My Skills</h1>
+          <div class="topic">Skills Reflects Our Knowledge</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus natus tenetur tempora? Quasi, rem quas omnis. Porro rem aspernatur reiciendis ut praesentium minima ad, quos, officia! Illo libero, et, distinctio repellat sed nesciunt est modi quaerat placeat. Quod molestiae, alias?</p>
+          <div class="experience">
+            <div class="num">10</div>
+            <div class="exp">
+              Years Of <br />
+              Experience
+            </div>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">HTML</div>
+            <div class="per">90%</div>
+          </div>
+          <div class="box">
+            <div class="topic">CSS</div>
+            <div class="per">80%</div>
+          </div>
+          <div class="box">
+            <div class="topic">JavScript</div>
+            <div class="per">70%</div>
+          </div>
+          <div class="box">
+            <div class="topic">PHP</div>
+            <div class="per">60%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- this is about section -->
+<section class="about-us" id="about">
+    <div class="about">
+        <img src="{{ url_for('static', filename='img/00.svg')}}" class="pic" />
+        <div class="text">
+            <h2>About Me</h2>
+            <h5>Back-end Developer & <span>Designer</span></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita natus ad sed harum itaque ullam enim quas, veniam accusantium, quia animi id eos adipisci iusto molestias asperiores explicabo cum vero atque amet corporis! Soluta illum facere consequuntur magni. Ullam dolorem repudiandae cumque voluptate consequatur consectetur, eos provident necessitatibus reiciendis corrupti!</p>
+            <div class="data">
+                <a href="#" class="hire">Hire Me</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+
+*{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #f8f9fa;
+}
+  
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+  color: #fff;
+  background: #4070f4;
+  padding: 7px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  display: none;
+  transition: all 0.3s ease;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+.scroll-button a:hover {
+  background: #2955d6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* the home section */
+.home{
+  height: 100%;
+  width: 100%;
+  padding: 80px 20px 0 20px;
+  clear: both;
+  font-family: 'Ubuntu', sans-serif;
+  position: relative;
+}
+
+.text img {
+  height: 300px;
+  max-width: 100%;
+  object-fit: cover;
+  position:absolute;
+  right: 10%;
+  scroll-behavior: smooth;
+}
+
+.home .home-content{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home .text-one{
+  font-size: 25px;
+  color: #0E2431;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.home .text-two{
+  color: #0E2431;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .text-three{
+  font-size: 40px;
+  margin: 5px 0;
+  color: #4070f4;
+}
+
+.home .button{
+  
+  padding-top: 20px;
+}
+.home .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #4070f4;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+
+/* this is the skills section */
+.skills{
+  height: 100%;
+  width: 100%;
+  padding: 110px 20px 0 20px;
+}
+.skills .skills-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills .text h1{
+  color: #333;
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.skills-details .text{
+  width: 50%;
+  background-color: #ffffff;
+}
+.skills-details p{
+  color: #0E2431;
+  text-align: justify;
+}
+.skills .skills-details .experience{
+ display: flex;
+ align-items: center;
+ margin: 0 10px;
+}
+.skills-details .experience .num{
+ color: #0E2431;
+ font-size: 80px;
+}
+.skills-details .experience .exp{
+ color: #0E2431;
+ margin-left: 20px;
+ font-size: 18px;
+ font-weight: 500;
+ margin: 0 6px;
+}
+.skills-details .boxes{
+ width: 45%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.skills-details .box{
+ width: calc(100% / 2 - 20px);
+ margin: 20px 0;
+}
+.skills-details .boxes .topic{
+ font-size: 20px;
+ color: #4070f4;
+}
+.skills-details .boxes .per{
+ font-size: 60px;
+ color: #4070f4;
+}
+
+/* this is my about section */
+.about-us {
+  
+  height: 100%;
+  width: 100%;
+  padding: 110px 20px;
+  margin: 0 0 0 0;
+  padding-bottom: 200px;
+  
+  
+}
+
+.about-us .pic {
+  
+  width: 500px;
+  border-radius: 12px;
+  margin-top: 100px;
+ 
+}
+
+.about-us .about {
+  padding: 0 0 0 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.about-us .text {
+  padding: 0 100px 0 100px;
+  margin: 0 0 0 0;
+  background-color: #ffffff;
+
+}
+.about-us .text h2 {
+  color: #333;
+  font-size: 80px;
+  font-weight: 600;
+  margin-top: 20px;
+  
+}
+
+.about-us .text h5 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.about-us span {
+  color: #4070f4;
+}
+
+.about-us .text p {
+  color: #333;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.about-us .data {
+  margin-top: 30px;
+}
+
+.about-us .hire {
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+
+.about-us .hire:hover {
+  background: #000;
+}

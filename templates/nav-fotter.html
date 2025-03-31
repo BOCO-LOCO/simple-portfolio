@@ -1,0 +1,56 @@
+<nav>
+    <div class="nav-content">
+      <div class="logo">
+        <a href="{{ url_for('index')}}">Portfolio.</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+
+  <script>
+  let nav = document.querySelector("nav");
+  let pic = document.querySelector(".home .text .pic");
+  let footer = document.querySelector(".footer");
+    window.onscroll = function() {
+      if(document.documentElement.scrollTop > 20){
+        nav.classList.add("sticky");
+        pic.classList.add("sticky");
+        footer.style.display = "block";
+      }else {
+        nav.classList.remove("sticky");
+        pic.classList.remove("sticky");
+        footer.style.display = "none";
+      }
+    }
+  </script>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p><i class="fas fa-envelope"></i> you@example.com</p>
+            <p><i class="fas fa-phone"></i> +1234567890</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="/">Home</a> / <a href="#about">About</a> / <a href="#skills">Skills</a></li>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <p>&copy; 2025 You. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+  </footer>

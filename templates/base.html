@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar_footer.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    {% if custom_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/' + custom_css)}}">
+    {% endif %}
+</head>
+<body>
+    
+    {% include 'nav-fotter.html' %} 
+
+    {% block body %}
+    {% endblock %}  
+
+    
+    
+    
+    <!-- Scroll Button -->
+    <script>
+        // Get the scroll button
+        let scrollBtn = document.querySelector('.scroll-button a');
+
+        // Show/hide scroll button based on scroll position
+        window.addEventListener('scroll', () => {
+            if(window.scrollY > 500){
+                scrollBtn.style.display = 'block';
+            } else {
+                scrollBtn.style.display = 'none';
+            }
+        });
+
+        // Smooth scroll to top when button is clicked
+        scrollBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
